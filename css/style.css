@@ -1,0 +1,120 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	color : rgb(30, 30, 30);
+	
+	}
+h1 {
+	color: lightgrey;
+}
+h2 {
+	color: rgb(16, 159, 195);
+	
+}
+h3 {
+	color: rgb(16,159,195);
+	
+}
+
+img { 
+  
+  width :150px;
+  height: 100px;
+}
+.navbar-transparent {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navbar-transparent .navbar-brand,
+.navbar-transparent .navbar-nav > li > a {
+  color: #eeeeee;
+  /*line-height: 50px;*/
+}
+
+.navbar-transparent .navbar-nav > li > a:hover,
+.navbar-transparent .navbar-nav > li > a:active,
+.navbar-transparent .navbar-nav > li > a:focus,
+.navbar-transparent .navbar-nav > .open > a,
+.navbar-transparent .navbar-nav > .open > a:hover,
+.navbar-transparent .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.navbar-transparent .navbar-brand:hover,
+.navbar-transparent .navbar-brand:active,
+.navbar-transparent .navbar-brand:focus {
+  color: white;
+}
+
+#teaser {
+	background-image: url("../images/background-2.jpg") ;
+	background-size: cover;
+	margin-top: 50px;
+	padding-top:13em;
+	height: 35em;
+	text-shadow: 2px 2px 5px rgba(0,0,0, 2);
+
+}
+#teaser a {
+	margin-top: 4em;
+}
+.feature {
+	border: 2px solid rgb(16,159,195) ;
+	text-align: center; 
+	margin:20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+}
+.card {
+	margin-bottom: 3em;
+}
+.social {
+	list-style-type: none;
+	display: inline;
+	margin: 10px 0px 10px 0px;
+  	padding: 10px;
+  	text-align: center;
+  	font-size: 28px;
+}
+.social a {
+	padding: 10px 20px;
+}
+footer h3 {
+	padding-top: 10px; 
+    padding-left: 3em;
+	padding-bottom: 10px;
+	margin-top: 0px;
+}
+#footer {
+	width: 100%;
+	margin-top: 2em;
+}
+
+footer {
+	background-color: rgb(66,66,66);
+	padding-bottom: 3em;
+	padding-top: 3em;
+	margin:0px;
+	width: 100%;
+}
+footer a {
+	text-decoration: none;
+	color:rgb(66,66,66);
+	background-color:rgb(16, 159, 195);
+}
+footer a:hover {
+	color: white;
+	background-color: rgb(16,159,195);
+	
+}
+
+
+
+
+
+
+
+
+
+
