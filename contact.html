@@ -56,25 +56,25 @@
  					<div class="col-xs-12 col-sm-6">
  						<div id="map" style="width: 100%; height: 400px;"></div>
 
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+						<script type="text/javascript" src="https://maps.googleapis.com/maps/api/?key=AIzaSyDmadbq69ulFPBbOvgdMVCTi-cVy3CEFnA&exp&sensor=false&libraries=places"></script>
 
-<script type="text/javascript">
-  var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+						<script type="text/javascript">
+ 						 	var myLatlng = new google.maps.LatLng(48.852937,2.364178);
 
-  var myOptions = {
-      zoom: 14,
-      center: myLatlng,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: []
-  };
+  						var myOptions = {
+      					zoom: 14,
+      					center: myLatlng,
+     						 mapTypeId: google.maps.MapTypeId.ROADMAP,
+      					styles: []
+  							};
 
-  var map = new google.maps.Map(document.getElementById('map'), myOptions);
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: "You are here!"
-  });
-</script>
+  						var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  						var marker = new google.maps.Marker({
+      					position: myLatlng,
+     						map: map,
+      					title: "You are here!"
+  							});
+						</script>
  					</div>
  					<div class="col-xs-12 col-sm-6">
  						<h1>Contact</h1>
