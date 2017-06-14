@@ -16,7 +16,7 @@
 	</head>
 
 	<body>
-
+<!-- navbar -->
 	    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
       	<div class="container-fluid">
       
@@ -43,81 +43,53 @@
               		</ul>
             		</li>
           		</ul>
-      	</nav>
+      
 
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+      		</div><!-- /.navbar-collapse -->
+    		</div><!-- /.container-fluid -->
+    	</nav>
 
-<!-- Header  -->
-			<div id="teaser" class="text-center">
-				<h1>MAKE IT</h1>
-				<h2>Concevez votre Popup House sans architecte</h2>
-				<button type="button" class="btn btn-success btn-lg btn-teaser" data-toggle="modal" data-target="#checkin">En savoir plus</button>
+<!-- end navbar -->
+			<div class="vertical-spacer"></div>
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col-xs-12 col-sm-6">
+ 						<div id="map" style="width: 100%; height: 400px;"></div>
 
-<!-- Modal -->
-				<div class="modal fade" id="checkin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  				<div class="modal-dialog" role="document">
-    				<div class="modal-content">
-							<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        				<h4 class="modal-title " id="myModalLabel titre-modal ">Prélancement du service</h4>
-      				</div> 
-      				
-      				<div class="modal-body">
-      				   
- <!-- formulaire Wufoo-->
-<div id="wufoo-m1n24zjz10rsill">
-Fill out my <a href="https://lague.wufoo.com/forms/m1n24zjz10rsill">online form</a>.
-</div>
-<!-- <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">Online contact and registration forms from <a href="http://www.wufoo.com">Wufoo</a>.</div>  -->
-<script type="text/javascript">var m1n24zjz10rsill;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'lague',
-'formHash':'m1n24zjz10rsill',
-'autoResize':true,
-'height':'200px',
-'async':true,
-'host':'wufoo.com',
-'header':'show',
-'ssl':true};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { m1n24zjz10rsill = new WufooForm();m1n24zjz10rsill.initialize(options);m1n24zjz10rsill.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+  var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+  var myOptions = {
+      zoom: 14,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: []
+  };
+
+  var map = new google.maps.Map(document.getElementById('map'), myOptions);
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: "You are here!"
+  });
+</script>
+ 					</div>
+ 					<div class="col-xs-12 col-sm-6">
+ 						<h1>Contact</h1>
+ 						<p>adresse fictive</p>
+ 						<p>téléphone : 00000000</p>
+ 					</div>
+
+ 				</div>
+ 			</div>
 
 
 
+<!-- FOOTER -->
 
-      				</div>
-      				<!-- <div class="modal-footer">
-        				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        				<button type="button" class="btn btn-primary">Save changes</button>
-      				</div> -->
-    				</div>
-  				</div>
-				</div>			
-			</div>
-<!--end Modal  -->
-			
-			<div class="container">				
-				<div class="row card">
-					<div class="col-xs-12 col-sm-6 text-center">
-						<h2>Plan</h2>
-						<img src="images/plan.png" alt="plan" class="menu">
-						<p>Faites le plan de votre future Popup</p>
-					</div>
-
-					<div class=" col-xs-12 col-sm-6 text-center">
-						<h2>Logistique</h2>
-						<img src="images/eco-2.png" alt="logistique et budget" width="100px" class="menu">  
-						<p>Déterminez la quantité et le coût des matéiaux suivant le plan de votre Popup.</p>
-					</div>
-				</div>
-			</div>
-
-			<footer class="container text-left" id="footer">
+		<footer class="container text-left" id="footer">
 				<div class="row">
 					<div class="col-xs-6">
 						<h3>Suivez nous</h3>
